@@ -17,6 +17,8 @@ services:
       options:
         max-file: '5'
         max-size: 10m
+    env_file:
+      - .env
     volumes:
       - ./plugin:/plugin
       # - /usr/local/bin/docker:/usr/bin/docker
