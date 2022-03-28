@@ -42,7 +42,7 @@ EXPOSE 3000/tcp
 RUN mkdir -p /app
 WORKDIR /app
 COPY ecosystem.config.js ./
-COPY ../build/* ./
+COPY ./build/* ./
 RUN [ "npm", "i" ]
 
 # Setup jingisukan app
