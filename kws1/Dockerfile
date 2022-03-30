@@ -42,6 +42,8 @@ RUN [ "npm", "install", "pm2@5.1.2", "-g" ]
 # Open port
 EXPOSE 3000/tcp
 
+RUN apt-get install git -y
+
 # Setup main_backend app
 RUN mkdir -p /app
 WORKDIR /app
