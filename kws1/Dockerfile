@@ -46,6 +46,7 @@ COPY ecosystem.config.js ./
 COPY ./build/* ./
 COPY ./build/src ./src/
 RUN [ "npm", "i" ]
+RUN ["npm", "run", "typeorm", "migration:run"]
 
 # Setup jingisukan app
 RUN [ "git", "clone", "https://github.com/KangnamUnivShuttle/jingisukan_cli.git", "/cli" ]
