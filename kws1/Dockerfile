@@ -44,7 +44,7 @@ WORKDIR /app
 RUN mkdir -p /app/src
 COPY ecosystem.config.js ./
 COPY ./build/* ./
-COPY ./build/src ./src/
+# COPY ./build/src ./src/
 RUN [ "npm", "i" ]
 RUN ["npm", "run", "typeorm", "migration:run"]
 
