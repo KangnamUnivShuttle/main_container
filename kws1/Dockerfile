@@ -9,7 +9,7 @@ RUN date
 
 # Install nodejs 14
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install --force-yes nodejs
 RUN node -v
 
 # Install docker for DooD (Docker out of Docker)
