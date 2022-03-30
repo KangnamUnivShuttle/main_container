@@ -19,6 +19,7 @@ services:
         max-size: 10m
     env_file:
       - .env
+    privileged: true
     volumes:
       - ./plugin:/plugin
       # - /usr/local/bin/docker:/usr/bin/docker
