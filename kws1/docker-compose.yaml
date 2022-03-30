@@ -22,5 +22,5 @@ services:
     volumes:
       - ./plugin:/plugin
       # - /usr/local/bin/docker:/usr/bin/docker
-      # - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
       # - /var/lib/docker:/var/lib/docker
