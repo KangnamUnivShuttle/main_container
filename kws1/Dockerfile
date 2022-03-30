@@ -41,8 +41,10 @@ EXPOSE 3000/tcp
 # Setup main_backend app
 RUN mkdir -p /app
 WORKDIR /app
+RUN mkdir -p /app/src
 COPY ecosystem.config.js ./
 COPY ./build/* ./
+COPY ./build/src/* ./src/
 RUN [ "npm", "i" ]
 
 # Setup jingisukan app
