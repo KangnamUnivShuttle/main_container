@@ -29,9 +29,9 @@ RUN apt-get install wget iptables libltdl7=2.4.2-1.7ubuntu1 libsystemd-journal0=
 # RUN apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 RUN wget https://download.docker.com/linux/ubuntu/dists/trusty/pool/stable/amd64/docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
 RUN dpkg --install ./docker-ce_18.06.1~ce~3-0~ubuntu_amd64.deb
-RUN groupadd -g 499 docker
+# RUN groupadd -g 499 docker
 
-VOLUME ["/var/run/docker.sock"]
+# VOLUME ["/var/run/docker.sock"]
 
 # Install docker-compose
 RUN curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
