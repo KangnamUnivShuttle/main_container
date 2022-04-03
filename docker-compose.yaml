@@ -19,6 +19,7 @@ services:
         max-size: 10m
     volumes:
       - ./plugin:/plugin
+      - ./log:/app/log
       # - /usr/local/bin/docker:/usr/bin/docker
       # - /var/run/docker.sock:/var/run/docker.sock
       # - /var/lib/docker:/var/lib/docker
